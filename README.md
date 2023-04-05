@@ -1,52 +1,26 @@
 # Python-project
 
-1. Zawartość
-Katalog projekt zawiera się z następujących plików:
-• Filmy.py – główny program
-• Lista.txt – plik zawierający dane do wczytania w naszą bazę danych
+1. The content of the project directory consists of the following files:
+• Filmy.py – main program
+• Lista.txt – a file containing data to be loaded into our database
 
-2. Wprowadzenie
-Baza danych została stworzona do zbierania oraz organizowania informacji dotyczących
-filmów. Po uruchomieniu programu, w terminalu zostanie nam przedstawione menu z
-różnymi opcjami wyboru.
+2. Introduction
+The database was created to collect and organize information about movies. Upon running the program, a menu with various options to choose from will be presented in the terminal.
 
-3. Wczytanie z pliku oraz wypisanie w postaci tabelki
-Na początku menu jest opcja wczytania już gotowych filmów z danymi dzięki funkcji
-wczytaj_dane_z_pliku(). Program wyświetli nam ilość rekordów znajdujących się w danym
-pliku. Funkcja ta pozwala nam wraz z funkcją wypisz_dane_w_postaci_tabelki() wyświetlić
-wszystkie filmy zgodnie z kolejnością w pliku lista.txt. 
+3. Loading from file and displaying as a table
+At the beginning of the menu, there is an option to load pre-made movies with data using the function load_data_from_file(). The program will display the number of records in the file. This function, along with the function display_data_in_table_format(), allows us to display all movies in the order specified in the list.txt file.
 
-4. Sortowanie
-Po wybraniu tej opcji program przedstawi nam sposoby sortowania według kryteriów. Jest to
-bardzo przydatne jeśli chcemy mieć dane przedstawione w sposób chronologiczny. Dla
-każdego kryterium jest zrobiona funkcja porównania.
+4. Sorting
+After choosing this option, the program will present us with sorting methods based on criteria. This is very useful if we want the data to be presented in chronological order. A comparison function is created for each criterion.
 
-5. Wyszukiwanie
-W celu nie potrzebnego szukania w dużej bazie danych opcja wyszukiwania ułatwi nam
-znalezienie konkretnego filmu. Jest to opcja numer 4 w opcji menu. Po wybraniu tej opcji
-program poprosi o metodę wyszukiwania tj.: tytuł, kategoria, rok premiery, długość Filmu.
-Należy wpisać słowo kluczowe po wybraniu opcji wyszukiwania. Jeśli w naszej bazie danych
-nie ma filmu spełniające dane kryterium program wyświetli nam informację o ich braku, w
-innym przypadku ukaże nam w postaci tabelki.
+5.Search
+In order to avoid unnecessary searching in a large database, the search option will help us find a specific movie. This is option number 4 in the menu. After selecting this option, the program will ask for the search method, such as title, category, year of release, and length of the movie. A keyword should be entered after selecting the search option. If there is no movie in our database that meets the given criterion, the program will display a message about their absence. Otherwise, it will be displayed in table format.
 
-6. Dodanie filmu do bazy danych
-Za dodanie filmu do bazy danych odpowiedzialna jest funkcja dodaj_rekord(). Program
-poprosi o wpisanie takich danych jak: Nazwa filmu, kategoria, rok produkcji oraz długość
-filmu. Niestety przy wprowadzaniu danych trzeba uważać, aby nie wpisywać polskich znaków
-(prowadzi to do poszerzenia tabeli w danym wierszu) oraz w przypadku wieloczłonowej
-nazwy filmu należy wprowadzić nazwę filmu razem lub zamiast spacji użyć „_”. Może to
-doprowadzić do tego że nazwa filmu może zostać podzielona na kilka kolumn.
+6. Adding a movie to the database
+The function responsible for adding a movie to the database is add_record(). The program will ask for such data as: movie title, category, production year, and movie length. Unfortunately, when entering data, be careful not to enter Polish characters (this leads to table widening in a given row) and in the case of a multi-part movie title, enter the movie title together or use "_" instead of a space. This can lead to the movie title being split into several columns.
 
-7. Usunięcie filmu z bazy danych
-Za usunięcie filmu z bazy odpowiedzialna jest funkcja usun_rekord(). Całkowicie usuwa
-wszystkie dane z danego rekordu. Jeśli wpiszemy zły rekord (nie istniejący lub już usunięty)
-wyświetli nam się komunikat „Brak rekordu do usunięcia”. W przypadku poprawnie
-dokonanego wyboru zobaczymy „Poprawnie usunięto rekord”. Żeby można było zobaczyć
-efekt należy przed usunięciem wyświetlić tabelę, a zarazem po dokonaniu operacji.
+7. Deleting a movie from the database
+The function responsible for deleting a movie from the database is delete_record(). It completely removes all data from a given record. If we enter the wrong record (non-existent or already deleted), the message "No record to delete" will be displayed. In case of a correctly made choice, we will see "Record successfully deleted". To see the effect, we must display the table before and after the operation.
 
-8. Zapis oraz wyjście z programu
-Po wybraniu opcji numer 7 mamy możliwość zapisać nasze zmiany do pliku dzięki funkcji
-zapisz_dane_do_pliku(). Plik jaki chcemy stworzyć z naszymi danymi można dowolnie
-nazwać. Jeśli wszystko będzie poprawne, wyskoczy komunikat „Poprawnie zapisano do
-pliku”. W tym momencie możemy być pewni że nasze dane zostały poprawnie zapisane i
-wyjść bezpiecznie z terminala.
+8.Saving and exiting the program
+After choosing option number 7, we have the option to save our changes to a file using the function save_data_to_file(). The file we want to create with our data can be named arbitrarily. If everything is correct, the message "Successfully saved to file" will pop up. At this point, we can be sure that our data has been saved correctly and exit the terminal safely.
