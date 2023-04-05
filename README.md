@@ -13,7 +13,7 @@ At the beginning of the menu, there is an option to load pre-made movies with da
 4. Sorting
 After choosing this option, the program will present us with sorting methods based on criteria. This is very useful if we want the data to be presented in chronological order. A comparison function is created for each criterion.
 
-5.Search
+5. Search
 In order to avoid unnecessary searching in a large database, the search option will help us find a specific movie. This is option number 4 in the menu. After selecting this option, the program will ask for the search method, such as title, category, year of release, and length of the movie. A keyword should be entered after selecting the search option. If there is no movie in our database that meets the given criterion, the program will display a message about their absence. Otherwise, it will be displayed in table format.
 
 6. Adding a movie to the database
@@ -22,5 +22,5 @@ The function responsible for adding a movie to the database is add_record(). The
 7. Deleting a movie from the database
 The function responsible for deleting a movie from the database is delete_record(). It completely removes all data from a given record. If we enter the wrong record (non-existent or already deleted), the message "No record to delete" will be displayed. In case of a correctly made choice, we will see "Record successfully deleted". To see the effect, we must display the table before and after the operation.
 
-8.Saving and exiting the program
+8. Saving and exiting the program
 After choosing option number 7, we have the option to save our changes to a file using the function save_data_to_file(). The file we want to create with our data can be named arbitrarily. If everything is correct, the message "Successfully saved to file" will pop up. At this point, we can be sure that our data has been saved correctly and exit the terminal safely.
